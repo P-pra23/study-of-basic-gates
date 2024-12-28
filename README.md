@@ -65,15 +65,32 @@ Y= A⊕B
 **PROGRAM**
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
-
- Developed by: RegisterNumber: 
+```
+module exp1de(a,b,c,d,e,x,y,z);
+input a,b;
+output c,d,e,x,y,z;
+assign c = a&b; //and gate
+assign d = a|b; //or gate
+assign e = a^b; 
+assign x = ~(a&b);
+assign y =~(a|b);
+assign z = ~(a^b);
+endmodule
+```
+ Developed by: Prathikshaa .S RegisterNumber: 24007902
  
 **Logic symbol & Truthtable**
 
+![Screenshot 2024-12-28 081709](https://github.com/user-attachments/assets/d62363d6-7fd3-4290-bb2a-a1badd3b3f69)
+
 **RTL realization Output:** 
+![Screenshot 2024-12-28 081714](https://github.com/user-attachments/assets/c279031f-fd2a-4075-9c45-332b588befee)
+
 
 **RTL**
+![Screenshot 2024-12-28 081720](https://github.com/user-attachments/assets/55d18fb0-f4f8-4751-a3da-eeb88e91c602)
+
 
 **Result:**
-
+The truth table of the specified logic gates(AND, OR, NOT, NAND, NOR, XOR, XNOR) was successfully implemented and verify using Verilog programming in Quartus II.
 
